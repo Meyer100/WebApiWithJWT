@@ -55,7 +55,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         }
 ```
 
-## Which package do i need?
+## Which packages do i need?
 ### For .6 projects
 Microsoft.AspNetCore.Authentication.JwtBearer version 6.0.23
 ### For .7 or newer versions
