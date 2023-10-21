@@ -55,6 +55,20 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         }
 ```
 
+## appsettings
+### Remember to include this in appsettings
+```json
+  /* Setting the values of the JWT options*/
+  "Jwt": {
+    "Issuer": "org.meyer100",
+    "Audience": "org.meyer100",
+    /* Make sure to make a long an unique key
+       Also it is not recommended to keep the key inside the appsettings
+    */
+    "Key": "9KXaZPbsY9!6C@CEbz%&FC3pknb7RMYKgRRAN%A^nFiWCfQauAyCu9pPxLsFG%RckNjntHVQezV!5$L9ZDNE"
+  },
+```
+
 ## Which packages do i need?
 ### For .6 projects
 Microsoft.AspNetCore.Authentication.JwtBearer version 6.0.23
